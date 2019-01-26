@@ -6,12 +6,7 @@ public class Delivery : MonoBehaviour {
 	
 	public float collected = 0f;
 	public GameObject gatherer;
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}

@@ -13,7 +13,6 @@ public class HudUI : MonoBehaviour
 	private float defaultY;
 	private float defaultX;
 
-	// Use this for initialization
 	void Start ()
 	{
 		currentValue.enabled = false;
@@ -21,12 +20,6 @@ public class HudUI : MonoBehaviour
 		gameOverText.enabled = false;
 		defaultY = currentValue.rectTransform.localPosition.y;
 		defaultX = currentValue.rectTransform.localPosition.x;
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-
 	}
 
 	public void ResetCurrentValuePosition ()
@@ -37,7 +30,14 @@ public class HudUI : MonoBehaviour
 	public void SetOverallValue (float value)
 	{
 		overallValue.text = value.ToString ();
-		gameOverText.text = "Congratulations, you made " + value.ToString () + "$ for the devil. Press space to try again";
+        if (value <= 0)
+        {
+            gameOverText.text = "You're not a very good thief, you stole nothing and obviously made " + value.ToString() + "$... Press 'Space' to play again or 'Escape' to quit the game.";
+        }
+        else
+        {
+            gameOverText.text = "Well done, you made " + value.ToString() + "$ for the devil. Press 'Space' to play again or 'Escape' to quit the game.";
+        }		
 	}
 
 	public void SetCurrentValue (float value)
