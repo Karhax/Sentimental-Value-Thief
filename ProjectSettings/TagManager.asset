@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Sellable
   - Camera
+  - Music
   layers:
   - Default
   - TransparentFX
