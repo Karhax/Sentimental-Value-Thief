@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameOver : MonoBehaviour
 {
 
@@ -10,7 +11,7 @@ public class GameOver : MonoBehaviour
 	private float timeDisplayTemp;
 	private float valueOverall;
 	private float valueCurrent;
-	public Canvas canvas;
+	public HudUI hudUI;
 	private bool endGame = false;
 	// Use this for initialization
 	void Start ()
@@ -26,21 +27,31 @@ public class GameOver : MonoBehaviour
 		timeLeft -= Time.deltaTime;
 		if (timeLeft < 0f && !endGame) {
 			endGame = true;
+			print ("gameover");
+			hudUI.EndGame ();
 			Camera.main.enabled = false;
 		}
 		if (transform.childCount > 0 && endGame) {
 			transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = true;
 			valueCurrent = transform.GetChild (0).GetComponent<ValueScript> ().value;
 			timeDisplayTemp -= Time.deltaTime;
+			hudUI.currentValue.rectTransform.localPosition = Vector3.Lerp (hudUI.currentValue.rectTransform.localPosition, hudUI.overallValue.rectTransform.localPosition, 0.5f*Time.deltaTime);
 			if (timeDisplayTemp < 0) {
 				timeDisplayTemp = timeDisplay;
 				GameObject.Destroy (transform.GetChild (0).gameObject);
 				valueOverall += valueCurrent;
-				print (valueOverall.ToString ());
 				valueCurrent = 0f;
+				hudUI.ResetCurrentValuePosition ();
 			}
 		} else if (transform.childCount == 0 && endGame) {
 			
 		}
+		UpdateValues ();
+	}
+
+	void UpdateValues ()
+	{
+		hudUI.SetCurrentValue (valueCurrent);
+		hudUI.SetOverallValue (valueOverall);
 	}
 }
