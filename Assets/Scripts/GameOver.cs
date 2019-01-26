@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -13,6 +13,7 @@ public class GameOver : MonoBehaviour
 	private float valueCurrent;
 	public HudUI hudUI;
 	private bool endGame = false;
+	private string scene;
 	// Use this for initialization
 	void Start ()
 	{
@@ -30,6 +31,7 @@ public class GameOver : MonoBehaviour
 			print ("gameover");
 			hudUI.EndGame ();
 			Camera.main.enabled = false;
+			transform.parent.Find ("Camera").gameObject.SetActive (true);
 		}
 		if (transform.childCount > 0 && endGame) {
 			transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = true;
@@ -44,7 +46,11 @@ public class GameOver : MonoBehaviour
 				hudUI.ResetCurrentValuePosition ();
 			}
 		} else if (transform.childCount == 0 && endGame) {
-			
+			hudUI.GameOver ();
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				scene = SceneManager.GetActiveScene ().name;
+				SceneManager.LoadScene (scene, LoadSceneMode.Single);
+			}
 		}
 		UpdateValues ();
 	}
