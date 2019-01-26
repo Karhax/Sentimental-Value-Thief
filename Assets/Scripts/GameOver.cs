@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -10,8 +11,9 @@ public class GameOver : MonoBehaviour
 	private float timeDisplayTemp;
 	private float valueOverall;
 	private float valueCurrent;
-	public Canvas canvas;
+	public HudUI hudUI;
 	private bool endGame = false;
+	private string scene;
 	// Use this for initialization
 	void Start ()
 	{
@@ -26,21 +28,36 @@ public class GameOver : MonoBehaviour
 		timeLeft -= Time.deltaTime;
 		if (timeLeft < 0f && !endGame) {
 			endGame = true;
+			print ("gameover");
+			hudUI.EndGame ();
 			Camera.main.enabled = false;
+			transform.parent.Find ("Camera").gameObject.SetActive (true);
 		}
 		if (transform.childCount > 0 && endGame) {
 			transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = true;
 			valueCurrent = transform.GetChild (0).GetComponent<ValueScript> ().value;
 			timeDisplayTemp -= Time.deltaTime;
+			hudUI.currentValue.rectTransform.localPosition = Vector3.Lerp (hudUI.currentValue.rectTransform.localPosition, hudUI.overallValue.rectTransform.localPosition, 0.5f*Time.deltaTime);
 			if (timeDisplayTemp < 0) {
 				timeDisplayTemp = timeDisplay;
 				GameObject.Destroy (transform.GetChild (0).gameObject);
 				valueOverall += valueCurrent;
-				print (valueOverall.ToString ());
 				valueCurrent = 0f;
+				hudUI.ResetCurrentValuePosition ();
 			}
 		} else if (transform.childCount == 0 && endGame) {
-			
+			hudUI.GameOver ();
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				scene = SceneManager.GetActiveScene ().name;
+				SceneManager.LoadScene (scene, LoadSceneMode.Single);
+			}
 		}
+		UpdateValues ();
+	}
+
+	void UpdateValues ()
+	{
+		hudUI.SetCurrentValue (valueCurrent);
+		hudUI.SetOverallValue (valueOverall);
 	}
 }
