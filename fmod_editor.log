@@ -7,17 +7,224 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 10.67ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000004F07FAD8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000038C47FA8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] SystemI::createSound                     : filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000047291FA8 : node = 0000000046EE9570
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000038AD5778.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000047291FA8
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000046EE9688
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000047292158 : node = 0000000038A775E0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000038AD5778.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Violin I', format=2, channels=2, frequency=48000, lengthbytes=602688, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.079315.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000047291FA8
+[LOG] SystemI::createSound                     :     filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000047292308 : node = 0000000038A77730
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000038AD5778.  list count = 0
+[LOG] SystemI::createSound                     : filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000472924B8 : node = 0000000038A77880
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000038AD5778.  list count = 1
+[LOG] SystemI::createSound                     : filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000038E7EEF8 : node = 0000000038A779D0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000038AD5778.  list count = 2
+[LOG] SystemI::createSound                     : filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000047292158
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000038A776F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : setdata soundi = 0000000038E7F0A8 : node = 0000000038A77B20
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Cellos', format=2, channels=2, frequency=48000, lengthbytes=584064, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.080383.
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000038AD5778.  list count = 3
+[LOG] SystemI::createSound                     :     filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000047292158
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000047292308
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000038A77848
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000047339F58 : node = 0000000038A77C70
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000038AD5778.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Violas', format=2, channels=2, frequency=48000, lengthbytes=584256, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.045990.
+[LOG] SystemI::createSound                     :     filename = P:\1.2\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000004733A108 : node = 0000000038A77DC0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000038AD5778.  list count = 4
+[LOG] SoundI::getSubSound                      : sound 0000000047291FA8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000047292308
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000472924B8
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000038A77998
+[LOG] SoundI::getSubSound                      : sound 0000000047292158.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SoundI::getSubSound                      :     sound 0000000047292308.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Piano II', format=2, channels=2, frequency=48000, lengthbytes=617632, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.085388.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000472924B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000038E7EEF8
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000038A77AE8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Theremin', format=2, channels=2, frequency=48000, lengthbytes=561184, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.278046.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000038E7EEF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000038E7F0A8
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000038A77C38
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Violin II', format=2, channels=2, frequency=48000, lengthbytes=600256, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.052856.
+[LOG] SoundI::getSubSound                      : sound 00000000472924B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     sound 0000000038E7EEF8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000038E7F0A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000047339F58
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000038A77D88
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SoundI::getSubSound                      : sound 0000000038E7F0A8.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Piano I', format=2, channels=2, frequency=48000, lengthbytes=534528, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.185272.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000047339F58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000004733A108
+[LOG] SystemI::createSoundInternal             :     Create name='P:\1.2\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9149696
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000038A77ED8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Spooky Basses', format=2, channels=2, frequency=48000, lengthbytes=592800, lengthpcm=2376000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.088806.
+[LOG] SoundI::getSubSound                      :     sound 0000000047339F58.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000004733A108
+[LOG] SoundI::getSubSound                      : sound 000000004733A108.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Spooky Violin I (0000000038C2FF18)
+[LOG] SoundI::release                          :     Spooky Violin I (0000000038AD5968)
+[LOG] SoundI::release                          :     Spooky Violin I (0000000038B32B28)
+[LOG] SoundI::release                          : Spooky Cellos (0000000038C300C8)
+[LOG] SoundI::release                          :     Spooky Cellos (0000000038AD5E48)
+[LOG] SoundI::release                          :     Spooky Cellos (0000000046DEA2A8)
+[LOG] SoundI::release                          : Spooky Violas (0000000038C2FD68)
+[LOG] SoundI::release                          :     Spooky Violas (0000000038AD6328)
+[LOG] SoundI::release                          :     Spooky Violas (0000000046DEA458)
+[LOG] SoundI::release                          : Spooky Theremin (000000004703D4E8)
+[LOG] SoundI::release                          :     Spooky Theremin (0000000038AD6188)
+[LOG] SoundI::release                          :     Spooky Theremin (0000000046DEA608)
+[LOG] SoundI::release                          : Spooky Violin II (000000004703D698)
+[LOG] SoundI::release                          :     Spooky Violin II (0000000038AD5CA8)
+[LOG] SoundI::release                          :     Spooky Violin II (0000000038B2A8F8)
+[LOG] SoundI::release                          : Spooky Basses (0000000038B2A2A8)
+[LOG] SoundI::release                          :     Spooky Basses (0000000038904C88)
+[LOG] SoundI::release                          :     Spooky Basses (0000000038B2AC58)
+[LOG] SoundI::release                          : Spooky Piano II (0000000038C2FBB8)
+[LOG] SoundI::release                          :     Spooky Piano II (0000000038AD57C8)
+[LOG] SoundI::release                          :     Spooky Piano II (0000000046DEA0F8)
+[LOG] SoundI::release                          : Spooky Piano I (0000000038B2A0F8)
+[LOG] SoundI::release                          :     Spooky Piano I (0000000038904948)
+[LOG] SoundI::release                          :     Spooky Piano I (0000000038B2AAA8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000038ADC3E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000038ADC3E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000038ADB9C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000038ADB9C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000038ADB818
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000038ADB818
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000038ADBD28
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000038ADBD28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000038ADC088
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000038ADC088
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000046C47B08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000046C47B08
+[LOG] SoundI::release                          : Spooky Basses (000000004733A108)
+[LOG] SoundI::release                          :     Spooky Basses (00000000471AB058)
+[LOG] SoundI::release                          :     Spooky Basses (0000000046C47B08)
+[LOG] SoundI::release                          : Spooky Piano I (0000000047339F58)
+[LOG] SoundI::release                          :     Spooky Piano I (00000000471AAEB8)
+[LOG] SoundI::release                          :     Spooky Piano I (0000000038ADC238)
+[LOG] SoundI::release                          : Spooky Violin II (0000000038E7F0A8)
+[LOG] SoundI::release                          :     Spooky Violin II (00000000471AAD18)
+[LOG] SoundI::release                          :     Spooky Violin II (0000000038ADC088)
+[LOG] SoundI::release                          : Spooky Theremin (0000000038E7EEF8)
+[LOG] SoundI::release                          :     Spooky Theremin (00000000471AAB78)
+[LOG] SoundI::release                          :     Spooky Theremin (0000000038ADC3E8)
+[LOG] SoundI::release                          : Spooky Piano II (00000000472924B8)
+[LOG] SoundI::release                          :     Spooky Piano II (0000000016FD96D8)
+[LOG] SoundI::release                          :     Spooky Piano II (0000000038ADBED8)
+[LOG] SoundI::release                          : Spooky Violas (0000000047292308)
+[LOG] SoundI::release                          :     Spooky Violas (0000000038904AE8)
+[LOG] SoundI::release                          :     Spooky Violas (0000000038ADBD28)
+[LOG] SoundI::release                          : Spooky Cellos (0000000047292158)
+[LOG] SoundI::release                          :     Spooky Cellos (0000000038904128)
+[LOG] SoundI::release                          :     Spooky Cellos (0000000038ADB818)
+[LOG] SoundI::release                          : Spooky Violin I (0000000047291FA8)
+[LOG] SoundI::release                          :     Spooky Violin I (0000000038904468)
+[LOG] SoundI::release                          :     Spooky Violin I (0000000038ADB9C8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
