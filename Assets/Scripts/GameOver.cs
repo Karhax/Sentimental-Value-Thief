@@ -35,8 +35,8 @@ public class GameOver : MonoBehaviour
 			if (timeDisplayTemp < 0) {
 				timeDisplayTemp = timeDisplay;
 				GameObject.Destroy (transform.GetChild (0).gameObject);
-				print ("destroyed");
 				valueOverall += valueCurrent;
+				print (valueOverall.ToString ());
 				valueCurrent = 0f;
 			}
 		} else if (transform.childCount == 0 && endGame) {
