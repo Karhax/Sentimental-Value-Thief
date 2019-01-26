@@ -10,7 +10,7 @@ namespace UnityStandardAssets.Utility
         const float k_Damper = 5.0f;
         const float k_Drag = 10.0f;
         const float k_AngularDrag = 5.0f;
-        const float k_Distance = 0.2f;
+        const float k_Distance = 0.3f;
         const bool k_AttachToCenterOfMass = false;
 
         private SpringJoint m_SpringJoint;

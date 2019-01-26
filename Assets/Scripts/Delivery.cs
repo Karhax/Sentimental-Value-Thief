@@ -23,6 +23,7 @@ public class Delivery : MonoBehaviour {
 			other.gameObject.GetComponent<Rigidbody> ().isKinematic = true;
 			other.gameObject.transform.SetParent (gatherer.transform);
 			other.gameObject.transform.localPosition = Vector3.zero;
+			other.gameObject.GetComponent<MeshRenderer> ().enabled = false;
 		}
 	}
 
