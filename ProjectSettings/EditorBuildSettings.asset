@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 5a69e19b8a012cd488339aaa4a3b356d
+  - enabled: 1
+    path: Assets/Scenes/jocke_test_scene.unity
+    guid: a3e04113800d4e74b8482fec79b879a3
