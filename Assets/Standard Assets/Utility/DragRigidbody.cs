@@ -30,9 +30,9 @@ namespace UnityStandardAssets.Utility
             RaycastHit hit = new RaycastHit();
             if (
                 !Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition).origin,
-                                 mainCamera.ScreenPointToRay(Input.mousePosition).direction, out hit, 100,
+                                 mainCamera.ScreenPointToRay(Input.mousePosition).direction, out hit, 4f,
                                  Physics.DefaultRaycastLayers))
-            {
+            {                
                 return;
             }
             // We need to hit a rigidbody that is not kinematic
@@ -47,7 +47,7 @@ namespace UnityStandardAssets.Utility
                 Rigidbody body = go.AddComponent<Rigidbody>();
                 m_SpringJoint = go.AddComponent<SpringJoint>();
                 body.isKinematic = true;
-            }
+            }            
 
             m_SpringJoint.transform.position = hit.point;
             m_SpringJoint.anchor = Vector3.zero;
