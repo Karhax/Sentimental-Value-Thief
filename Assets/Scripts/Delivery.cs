@@ -12,7 +12,7 @@ public class Delivery : MonoBehaviour {
 	}
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Sellable");
+		if (other.gameObject.tag == "Sellable")
 		{
 			collected += other.gameObject.GetComponent<ValueScript> ().value;
 			other.gameObject.GetComponent<Rigidbody> ().isKinematic = true;

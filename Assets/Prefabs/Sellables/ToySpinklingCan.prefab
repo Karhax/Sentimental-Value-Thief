@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4745735257062464}
   - component: {fileID: 33636796369898454}
   - component: {fileID: 23239194155635992}
-  - component: {fileID: 64160289446539034}
   - component: {fileID: 54422188117014602}
   - component: {fileID: 114527868679468398}
-  m_Layer: 0
+  - component: {fileID: 65259025758909084}
+  m_Layer: 8
   m_Name: ToySpinklingCan
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1594086491540134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.898, y: 1.155, z: -2.124}
+  m_LocalPosition: {x: 178.48277, y: 19.287603, z: 95.373245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,20 +100,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64160289446539034
-MeshCollider:
+--- !u!65 &65259025758909084
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1594086491540134}
-  m_Material: {fileID: 13400000, guid: 1a9f7c7b33b055a43997332eb344dda3, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 713ab84e72d721148bd1ceb54a4abb69, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.30683997, y: 0.53562593, z: 0.823908}
+  m_Center: {x: -0.000000014901161, y: 0.26781297, z: 0.10773891}
 --- !u!114 &114527868679468398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2000
+  description: My daughter..

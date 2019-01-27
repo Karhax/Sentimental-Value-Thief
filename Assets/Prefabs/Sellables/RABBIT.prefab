@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54231198601412724}
   - component: {fileID: 114732948622464494}
   - component: {fileID: 65998006329001810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RABBIT
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 56
+  description: fish

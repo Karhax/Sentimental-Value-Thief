@@ -5,4 +5,5 @@ using UnityEngine;
 public class ValueScript : MonoBehaviour {
 
 	public int value;
+    public string description;
 }

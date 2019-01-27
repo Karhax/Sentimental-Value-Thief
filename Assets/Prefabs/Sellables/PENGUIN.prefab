@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54295792296275314}
   - component: {fileID: 114424934535924306}
   - component: {fileID: 65529312283997512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PENGUIN
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 123
+  description: donkey

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114522320460281554}
   - component: {fileID: 54985079047546100}
   - component: {fileID: 65514317427944826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BEAR
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 86
+  description: 

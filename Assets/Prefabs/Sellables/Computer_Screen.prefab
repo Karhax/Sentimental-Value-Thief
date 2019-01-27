@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54004114785459744}
   - component: {fileID: 65924644378863100}
   - component: {fileID: 114531016135445072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Screen
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302174493094430}
   m_LocalRotation: {x: 0.00000007531902, y: 0.3809161, z: -0.00000003102956, w: 0.9246096}
-  m_LocalPosition: {x: 12.90102, y: 2.5769372, z: -34.98783}
+  m_LocalPosition: {x: 187.52222, y: 19.546858, z: 92.802986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
+  description: Noice
