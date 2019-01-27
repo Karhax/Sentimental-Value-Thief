@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54933022235155968}
   - component: {fileID: 65351296729881418}
   - component: {fileID: 114097640198451796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wardrobe1
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -37,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1412850369787944}
-  m_LocalRotation: {x: 0.000000019785924, y: 0.42477685, z: -0.000000009283797, w: 0.9052981}
-  m_LocalPosition: {x: 5.867782, y: 1.932492, z: -39.684204}
+  m_LocalRotation: {x: 0.000000021498096, y: 0.8716592, z: 0.000000003937472, w: 0.49011248}
+  m_LocalPosition: {x: 175.52573, y: 19.067505, z: 94.2842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 50.273003, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 121.30401, z: 0}
 --- !u!23 &23166935885017664
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -126,3 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 100
+  description: Hello darkness

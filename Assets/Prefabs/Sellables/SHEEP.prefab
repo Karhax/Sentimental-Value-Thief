@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54285282299660936}
   - component: {fileID: 114454421575006238}
   - component: {fileID: 65961958795998588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SHEEP
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 123
+  description: srasgage

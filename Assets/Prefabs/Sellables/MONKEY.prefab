@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54901677287645946}
   - component: {fileID: 114587202226480040}
   - component: {fileID: 65519380092483416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MONKEY
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 253
+  description: kong

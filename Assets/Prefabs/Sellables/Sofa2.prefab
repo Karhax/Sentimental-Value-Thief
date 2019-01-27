@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54482754569578324}
   - component: {fileID: 65634918969218226}
   - component: {fileID: 114473943841895714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sofa2
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1444977347677352}
   m_LocalRotation: {x: 0.00000006657903, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.111633, y: 1.9199371, z: -36.24991}
+  m_LocalPosition: {x: 187.70792, y: 19.222006, z: 91.36543}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 100
+  description: my favorite sofa

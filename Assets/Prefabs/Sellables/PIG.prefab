@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54002917755314318}
   - component: {fileID: 114181548427432512}
   - component: {fileID: 65692380085669074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PIG
   m_TagString: Sellable
   m_Icon: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 765
+  description: ok
